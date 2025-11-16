@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>HistorIA V1</title>
+<title>HistorIA V1.1</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -16,6 +16,10 @@
 
 <section id="telaCriacao" class="tela">
   <h2>Configurar História</h2>
+
+  <label>Título da História</label>
+  <input id="titulo" />
+
   <label>Enredo</label>
   <textarea id="enredo"></textarea>
 
@@ -42,7 +46,7 @@
 </section>
 
 <section id="telaHistoria" class="tela hidden">
-  <h2>História</h2>
+  <h2 id="tituloDisplay"></h2>
   <div id="texto"></div>
   <div id="escolhas" class="hidden">
     <button class="opcao" data-n="1"></button>
