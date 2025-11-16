@@ -5,13 +5,14 @@ body{
   color:white;
 }
 #statusFloat{
- position:fixed;top:10px;right:10px;background:#0008;padding:10px 15px;
- border-radius:10px;backdrop-filter:blur(6px);z-index:999;
+  position:fixed;top:10px;right:10px;background:#0008;
+  padding:10px 15px;border-radius:10px;backdrop-filter:blur(6px);
+  z-index:999;
 }
 #menuButton{font-size:32px;padding:10px;cursor:pointer;}
 #sideMenu{
- position:fixed;top:0;left:0;width:250px;height:100%;
- background:#000a;backdrop-filter:blur(8px);padding-top:50px;
+  position:fixed;top:0;left:0;width:250px;height:100%;
+  background:#000a;backdrop-filter:blur(8px);padding-top:50px;
 }
 #sideMenu ul{list-style:none;margin:0;padding:0;}
 #sideMenu li{padding:15px;font-size:20px;cursor:pointer;}
@@ -20,24 +21,24 @@ body{
 .hidden{display:none;}
 
 .campo{
- width:100%;padding:12px;border-radius:10px;border:none;margin-bottom:15px;
+  width:100%;padding:12px;border-radius:10px;border:none;margin-bottom:15px;
 }
 
 .pill{
- padding:12px 20px;border-radius:50px;border:none;background:white;
- color:#4a00e0;font-weight:bold;cursor:pointer;
+  padding:12px 20px;border-radius:50px;border:none;background:white;
+  color:#4a00e0;font-weight:bold;cursor:pointer;
 }
 
 #barraContainer{
- width:80%;height:20px;background:#fff3;margin:auto;border-radius:20px;overflow:hidden;
+  width:80%;height:20px;background:#fff3;margin:auto;border-radius:20px;overflow:hidden;
 }
 #barra{height:100%;width:0%;background:white;}
 
 #texto{
- background:rgba(255,255,255,0.1);padding:15px;border-radius:10px;min-height:100px;
+  background:rgba(255,255,255,0.1);padding:15px;border-radius:10px;min-height:100px;
 }
 
 #listaHistorias .histItem{
- background:rgba(0,0,0,0.25);padding:10px 15px;border-radius:10px;
- margin-bottom:10px;cursor:pointer;
+  background:rgba(0,0,0,0.25);padding:10px 15px;border-radius:10px;
+  margin-bottom:10px;cursor:pointer;
 }
