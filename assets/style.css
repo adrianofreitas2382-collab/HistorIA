@@ -1,1 +1,58 @@
-body{font-family:Arial;background:#f4f4f4;margin:0}nav ul{display:flex;gap:20px;background:#111;color:white;padding:10px;list-style:none}nav li{cursor:pointer}.tela{padding:20px;display:block}.hidden{display:none}label,input,textarea,select{display:block;width:100%;margin-bottom:15px}#texto{background:white;padding:20px;border-radius:6px}
+body{
+  font-family:Arial;
+  margin:0;
+  background:linear-gradient(135deg,#4a00e0,#8e2de2);
+  color:white;
+}
+
+#menuButton{
+  font-size:32px;
+  padding:10px;
+  cursor:pointer;
+}
+
+#sideMenu{
+  position:fixed;
+  top:0;left:0;
+  width:250px;height:100%;
+  background:#000a;
+  backdrop-filter:blur(8px);
+  padding-top:50px;
+}
+#sideMenu ul{list-style:none;padding:0;}
+#sideMenu li{padding:15px;font-size:20px;cursor:pointer;}
+
+.tela{padding:20px;}
+.hidden{display:none;}
+
+.campo{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  margin-bottom:15px;
+}
+
+.pill{
+  padding:12px 20px;
+  border-radius:50px;
+  border:none;
+  background:white;
+  color:#4a00e0;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#barraContainer{
+  width:80%;
+  height:20px;
+  background:#fff3;
+  margin:auto;
+  border-radius:20px;
+  overflow:hidden;
+}
+#barra{
+  height:100%;
+  width:0%;
+  background:white;
+}
