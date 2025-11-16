@@ -1,90 +1,43 @@
 body{
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(135deg,#4a00e0,#8e2de2);
-  color: white;
+  font-family:Arial,sans-serif;
+  margin:0;
+  background:linear-gradient(135deg,#4a00e0,#8e2de2);
+  color:white;
 }
 #statusFloat{
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background: #0008;
-  padding: 10px 15px;
-  border-radius: 10px;
-  backdrop-filter: blur(6px);
-  z-index: 1000;
+ position:fixed;top:10px;right:10px;background:#0008;padding:10px 15px;
+ border-radius:10px;backdrop-filter:blur(6px);z-index:999;
 }
-#menuButton{
-  font-size: 32px;
-  padding: 10px;
-  cursor: pointer;
-}
+#menuButton{font-size:32px;padding:10px;cursor:pointer;}
 #sideMenu{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background: #000a;
-  backdrop-filter: blur(8px);
-  padding-top: 50px;
-  z-index: 900;
+ position:fixed;top:0;left:0;width:250px;height:100%;
+ background:#000a;backdrop-filter:blur(8px);padding-top:50px;
 }
-#sideMenu ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#sideMenu li{
-  padding: 15px;
-  font-size: 20px;
-  cursor: pointer;
-}
-.tela{
-  padding: 20px;
-}
-.hidden{
-  display: none;
-}
+#sideMenu ul{list-style:none;margin:0;padding:0;}
+#sideMenu li{padding:15px;font-size:20px;cursor:pointer;}
+
+.tela{padding:20px;}
+.hidden{display:none;}
+
 .campo{
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  margin-bottom: 15px;
+ width:100%;padding:12px;border-radius:10px;border:none;margin-bottom:15px;
 }
+
 .pill{
-  padding: 12px 20px;
-  border-radius: 50px;
-  border: none;
-  background: white;
-  color: #4a00e0;
-  font-weight: bold;
-  cursor: pointer;
+ padding:12px 20px;border-radius:50px;border:none;background:white;
+ color:#4a00e0;font-weight:bold;cursor:pointer;
 }
+
 #barraContainer{
-  width: 80%;
-  height: 20px;
-  background: #fff3;
-  margin: 20px auto;
-  border-radius: 20px;
-  overflow: hidden;
+ width:80%;height:20px;background:#fff3;margin:auto;border-radius:20px;overflow:hidden;
 }
-#barra{
-  height: 100%;
-  width: 0%;
-  background: white;
-}
+#barra{height:100%;width:0%;background:white;}
+
 #texto{
-  background: rgba(255,255,255,0.1);
-  padding: 15px;
-  border-radius: 10px;
-  min-height: 100px;
+ background:rgba(255,255,255,0.1);padding:15px;border-radius:10px;min-height:100px;
 }
+
 #listaHistorias .histItem{
-  background: rgba(0,0,0,0.25);
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  cursor: default;
+ background:rgba(0,0,0,0.25);padding:10px 15px;border-radius:10px;
+ margin-bottom:10px;cursor:pointer;
 }
