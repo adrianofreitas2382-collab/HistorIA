@@ -2,22 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>HistorIA V2.4</title>
+  <title>HistorIA V2.5</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
-
-  <!-- Importa WebLLM via ES module e expõe em window.webllm -->
   <script type="module">
     import * as webllm from "https://esm.run/@mlc-ai/web-llm";
     window.webllm = webllm;
   </script>
 </head>
 <body>
-
   <div id="statusFloat">Status: aguardando</div>
-
   <div id="menuButton">☰</div>
-
   <div id="sideMenu" class="hidden">
     <ul>
       <li data-screen="telaCriacao">Criar História</li>
@@ -26,48 +21,34 @@
       <li data-screen="telaHistorias">Histórias Criadas</li>
     </ul>
   </div>
-
   <section id="telaCriacao" class="tela">
     <h2>Configurar História</h2>
-
-    <label>Título da História</label>
-    <input id="titulo" class="campo"/>
-
-    <label>Enredo</label>
-    <textarea id="enredo" class="campo"></textarea>
-
-    <label>Núcleos</label>
-    <textarea id="nucleos" class="campo"></textarea>
-
+    <label>Título</label><input id="titulo" class="campo" />
+    <label>Enredo</label><textarea id="enredo" class="campo"></textarea>
+    <label>Núcleos</label><textarea id="nucleos" class="campo"></textarea>
     <label>Gênero</label>
     <select id="genero" class="campo">
       <option>Aventura</option><option>Mistério</option><option>Drama</option>
       <option>Terror</option><option>Comédia</option><option>Romance</option>
       <option>Fantasia</option><option>Ficção Científica</option><option>+18</option>
     </select>
-
-    <label>Qualidade do Enredo</label>
+    <label>Qualidade do enredo</label>
     <select id="qualidade" class="campo">
       <option value="equilibrado" selected>Equilibrado</option>
       <option value="alta">Alta</option>
       <option value="baixa">Baixa</option>
     </select>
-
-    <label><input type="checkbox" id="primeiraPessoa"> Ativar modo Primeira Pessoa</label>
-
+    <label><input type="checkbox" id="primeiraPessoa" /> Primeira Pessoa</label>
     <button id="btnIniciar" class="pill">Iniciar História</button>
   </section>
 
   <section id="telaHistoria" class="tela hidden">
     <h2 id="tituloDisplay"></h2>
-
     <div id="carregamento" class="hidden">
       <div id="barraContainer"><div id="barra"></div></div>
       <p id="barraTexto"></p>
     </div>
-
     <div id="texto"></div>
-
     <div id="escolhas" class="hidden">
       <button class="opcao pill" data-n="1"></button>
       <button class="opcao pill" data-n="2"></button>
@@ -75,28 +56,18 @@
     </div>
   </section>
 
-  <section id="telaTutorial" class="tela hidden">
-    <h2>Tutorial</h2>
-    <p>
-      1. Preencha título, enredo, núcleos e escolha o gênero.<br>
-      2. Selecione a qualidade do enredo (Alta, Equilibrado ou Baixa).<br>
-      3. Opcional: ative o modo Primeira Pessoa.<br>
-      4. Clique em "Iniciar História" para a IA gerar o início do capítulo (cerca de 50%).<br>
-      5. Todas as histórias ficam salvas em "Histórias Criadas" com o status atual.
-    </p>
+  <section id="telaTutorial" class="tela hidden"><h2>Tutorial</h2>
+    <p>1. Preencha os campos.<br>2. Selecione a qualidade.<br>3. Clique em iniciar.</p>
   </section>
 
   <section id="telaControles" class="tela hidden">
     <h2>Controles</h2>
-    <label>Volume da narração</label>
-    <input type="range" id="vol" min="0" max="1" step="0.1">
-    <label>Velocidade da narração</label>
-    <input type="range" id="vel" min="0.5" max="2" step="0.1">
+    <label>Volume</label><input type="range" id="vol" min="0" max="1" step="0.1" />
+    <label>Velocidade</label><input type="range" id="vel" min="0.5" max="2" step="0.1" />
   </section>
 
   <section id="telaHistorias" class="tela hidden">
-    <h2>Histórias Criadas</h2>
-    <div id="listaHistorias"></div>
+    <h2>Histórias Criadas</h2><div id="listaHistorias"></div>
   </section>
 
   <script src="assets/script.js"></script>
